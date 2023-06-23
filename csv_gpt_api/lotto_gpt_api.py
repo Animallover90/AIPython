@@ -5,12 +5,6 @@ import pandas as pd
 # https://openai.com/waitlist/gpt-4-api  <- 여기서 GPT-4 사용 등록 요청 후 승인되면 사용가능, 그 전까지 3.5 사용
 MODEL = "gpt-3.5-turbo"
 
-COMPLETIONS_API_PARAMS = {
-    "temperature": 0.0,
-    "max_tokens": 4097,
-    "model": MODEL,
-}
-
 df = pd.read_csv('C:/소스 위치/lotto_combined.csv')
 
 
@@ -53,7 +47,9 @@ def answer_with_gpt(
     
     response = openai.ChatCompletion.create(
         model=MODEL,
-        messages=messages
+        messages=messages,
+        temperature=0.0,
+        max_tokens=4097
         )
 
     return '\n' + response['choices'][0]['message']['content']
