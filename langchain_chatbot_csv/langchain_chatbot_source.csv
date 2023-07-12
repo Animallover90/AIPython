@@ -1,0 +1,11 @@
+title,heading,content,url,param
+유저의 로그인 기록,1,유저의 로그인 기록(정보 내역),user-login-info,user_id;start_date;end_date
+유저의 아이템 구매 기록,2,유저의 아이템 구매 기록(정보 내역),user-buy-item-info,user_id;start_date;end_date
+유저의 현금 충전 기록,3,유저의 현금(캐쉬) 충전 기록(정보 내역),user-cash-charge-info,user_id;start_date;end_date
+유저의 현금 아이템 구매 기록,4,유저의 현금(캐쉬) 아이템 구매 기록(정보 내역),user-buy-cash-item-info,user_id;start_date;end_date
+유저의 현금 아이템 환불 기록,5,유저의 현금(캐쉬) 아이템 환불 기록(정보 내역),user-refund-cash-item-info,user_id;start_date;end_date
+어제 접속자 수,6,어제 접속한(로그인한) 유저 숫자,yesterday-total-login-count,none
+저번달 접속자 수,7,한달 전부터 어제까지(저번달) 접속한(로그인한) 유저의 주간별 일별 접속자 수,last-month-total-login-count,none
+작년 월 평균 접속자 수,8,일년 전부터 어제까지(작년) 월 평균 접속한(로그인한) 유저 숫자,last-year-monthly-login-count,none
+최근 1주일 매출,9,일주일 전부터 어제까지 최근 일주일 매출 정보,last-week-daily-sales,none
+저번달 1달간 매출,10,1달 전부터 어제까지(저번달) 매출 정보,last-month-daily-sale,none
