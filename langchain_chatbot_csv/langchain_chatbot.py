@@ -134,7 +134,7 @@ def get_answer(question: str) -> str:
                
             params_data = "?"
             for key, value in params_response[0].items():
-                 params_data = params_data + key + "=" + value
+                 params_data = params_data + key + "=" + value + "&"
                  if value == '':
                      st.warning(key + " 값에 대한 정보가 부족합니다. 필요한 정보와 함께 질문하시기 바랍니다.")
                      return "No data"
